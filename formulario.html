@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribite a nuestro Newsletter</title>
+
+    <style>
+        * {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: skyblue;
+        }
+
+        h1 {
+            font-size: 48px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        nav {
+          background-color: skyblue;
+          
+
+        }
+        nav ul a:hover {
+            background-color: rgb(63, 195, 247);
+            color: white;
+            transition: 0.2 all;
+            border-radius: 5px;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: skyblue;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        label,
+        input {
+            font-size: 1vw;
+        }
+
+        input[type=text] {
+            width: 80%;
+            padding: 1vw;
+            margin: 5px;
+            display: inline-block;
+            border-radius: 5px;
+
+            width: 40vh;
+            left: 40px;
+            right: 40px;
+
+        }
+
+        form {
+            width: 40%;
+            margin: 0 auto;
+
+            background-color: #eee;
+        }
+
+        .input {
+            padding: 15px;
+
+            display: flex; /*Desde acá arranca el flexbox, es el contenedor de los demás items*/
+            justify-content: center; /*con el justify lo que hacemos es indicar dónde se va a posicionar el item contenedor con sus respectivos items internos*/
+            align-items: center; /*Con el align lo que hacemos es alinear los elementos según el eje vertical*/
+        }
+
+        .input label {
+            flex: 2; /* Si cambias estos dos valores vas cambiar el ancho que ocupa el label y el input */
+
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .input input {
+            flex: 10; /* Si cambias estos dos valores vas cambiar el ancho que ocupa el label y el input */
+        }
+
+        textarea {
+            flex: 5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type=submit]{
+            background-color: rgb(26, 224, 26);
+            color: white;
+            width: 80vh;
+            height: 10vh;
+            margin: 5px;
+            border-radius: 5px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+
+        }
+        textarea {
+            width: 80vh;
+        }
+
+
+
+        input[type=submit]:hover {
+            background-color: rgb(121, 255, 121);
+        }
+    </style>
+    <link rel="icon" href="iconopag.ico">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <a href="index2.html">Inicio</a>
+                <a href="sucursales.html">Sucursales</a>
+                <a href="formulario.html">Suscribirse</a>
+                <a href="nosotros.html">Sobre nosotros</a>
+            </ul>
+        </nav>
+
+        <h1>Turismo Codo a Codo</h1>
+        <h2>Suscribite a nuestro Newslatter</h2>
+
+    </header>
+    <main>
+        <form action="" method="GET">
+            <div class="input">
+                <label>Nombre:</label>
+                <input type="text" name="nombre" placeholder="Escriba su nombre">
+            </div>
+            <div class="input">
+                <label>Apellido:</label>
+                <input type="text" name="apellido" placeholder="Escriba su Apellido">
+            </div>
+            <div class="input">
+                <label>Dirección:</label>
+                <input type="text" name="dirección" placeholder="Escriba su dirección">
+            </div>
+            <div class="input">
+                <label>Ciudad:</label>
+                <input type="text" name="ciudad" placeholder="Ciudad donde vive">
+            </div>
+            <div class="input">
+                <label>Localidad:</label>
+                <input type="text" name="localidad" placeholder="Localidad donde vive">
+            </div>
+            <div class="input">
+                <label>Email:</label>
+                <input type="text" name="email" placeholder="Escriba su E-mail">
+            </div>
+            <div>
+                <label>¿Desea recibir novedades de viajes?</label>
+                <input type="checkbox" name="novedades">
+            </div>
+            <br>
+            <div>
+                <label>Dejanos un comentario acá abajo:</label>
+                <br>
+                <br>
+                <textarea name="comentario" rows="10" col="50" placeholder="Dejanos tu comentario..."></textarea>
+            </div>
+            <br>
+            <br>
+            <div>
+            
+                <input type="submit" value="Enviar">
+            </div>
+
+        </form>
+    </main>
+    <footer>
+        <div>
+            Integrantes del grupo: Maydana Ignacio, Daniel, Nahuel.
+        </div>
+    </footer>
+</body>
+
+</html>
